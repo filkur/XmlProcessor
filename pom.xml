@@ -8,5 +8,31 @@
     <artifactId>XmlProcessor</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <!-- SLF4J -->
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+        <!-- Lombock -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Compilator -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+        </dependency>
+    </dependencies>
 
 </project>

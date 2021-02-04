@@ -1,3 +1,25 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+‚
+Rtarget/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst,8\a\8ae396f369da14bb5c0973286facff8fb2c70d56
+€
+Ptarget/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst,3\d\3da01db98b88a8057c03354880f06dba49d3e795
+U
+%.mvn/wrapper/maven-wrapper.properties,3\2\32e074f71d16c1e88ac02aa83592ca6ad1fd98a8
+X
+(.mvn/wrapper/MavenWrapperDownloader.java,6\1\61ba2d75f3f04e099148e7a84c6a909f2000ff04
+4
+mvnw,5\d\5d837c4ed85ecaaf932c506e80ff5d7b9f3d590d
+8
+mvnw.cmd,1\f\1f1763f358c257ea3515417352b82b0165647ad1
+T
+$target/maven-archiver/pom.properties,5\a\5acbe6c306dee4498a010b1ca2096853e29e16a4
+K
+src/main/java/app/Main.java,e\b\eb1600cf0a732cd9d1abe029d6033ba40522a8bf
+Z
+*src/main/java/app/processor/XmlToJava.java,d\6\d6eab757701b13218bb0a8fbcf786b595aa06ec9
+\
+,src/main/java/app/model/account/Account.java,8\e\8e85102f7b5d29a44fe4ef5e00f6c28a744042f9
+U
+%src/main/java/app/model/Accounts.java,d\d\ddfe86391cb689de4c5fe09bde5c84817d3d512e

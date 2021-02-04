@@ -1,21 +1,21 @@
 package app.model;
 
 import app.model.account.Account;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@XmlRootElement(name = "Accounts")
+@Data
+@XmlRootElement(name = "accounts")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Accounts {
-    @Setter
-    @XmlElement(name = "Account")
-    @Getter
+
+    @XmlElement(name="account")
     private List<Account> accountsList;
 }

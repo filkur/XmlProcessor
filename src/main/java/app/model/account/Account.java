@@ -1,45 +1,30 @@
 package app.model.account;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import java.util.Date;
+import javax.xml.bind.annotation.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@XmlRootElement(name = "Account")
+@Data
+@XmlRootElement(name = "account")
 @XmlType(propOrder = {"name", "currency", "balance", "closingDate"})
+@XmlAccessorType(XmlAccessType.FIELD) //need this or throws exception
 public class Account {
 
-    @Setter
-    @XmlAttribute(name = "iban")
-    @Getter
+    @XmlAttribute
     private String iban;
 
-    @Setter
-    @XmlElement(name = "name")
-    @Getter
+    @XmlElement
     private String name;
 
-    @Setter
-    @XmlElement(name = "currency")
-    @Getter
+    @XmlElement
     private String currency;
 
-    @Setter
-    @XmlElement(name = "balance")
-    @Getter
+    @XmlElement
     private double balance;
 
-    @Setter
-    @XmlElement(name = "closingDate")
-    @Getter
-    private Date closingDate;
+    @XmlElement
+    private String closingDate;
 
 }

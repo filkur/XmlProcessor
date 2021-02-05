@@ -17,9 +17,17 @@ T
 $target/maven-archiver/pom.properties,5\a\5acbe6c306dee4498a010b1ca2096853e29e16a4
 K
 src/main/java/app/Main.java,e\b\eb1600cf0a732cd9d1abe029d6033ba40522a8bf
-Z
-*src/main/java/app/processor/XmlToJava.java,d\6\d6eab757701b13218bb0a8fbcf786b595aa06ec9
 \
 ,src/main/java/app/model/account/Account.java,8\e\8e85102f7b5d29a44fe4ef5e00f6c28a744042f9
 U
 %src/main/java/app/model/Accounts.java,d\d\ddfe86391cb689de4c5fe09bde5c84817d3d512e
+9
+	input.xml,9\e\9e767aedff1384cf0508d56497633c289919a9ef
+[
++src/main/java/app/dataStream/XmlToJava.java,d\6\d6391dc8db47ef3ee4444e1ff0d3a97a2cc57aab
+[
++src/main/java/app/dataStream/JavaToXml.java,7\5\75dfbc98277e7a47be49d88ab046f5410b271ecf
+Z
+*src/main/java/app/processor/Processor.java,b\d\bdd0e9e9f6d034a6d5422b71e64f64c19ff96243
+b
+2src/main/java/app/processor/filter/DataFilter.java,c\7\c777da5bcdf82c2e3eda6ecd46ca38a19838849c

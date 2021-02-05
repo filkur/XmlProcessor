@@ -54,15 +54,20 @@
         </dependency>
         <!-- Iban validator -->
         <dependency>
-            <groupId>nl.garvelink.oss</groupId>
-            <artifactId>iban</artifactId>
-            <version>1.8.0</version>
+            <groupId>org.iban4j</groupId>
+            <artifactId>iban4j</artifactId>
+            <version>3.2.1</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.filkur</groupId>
+            <artifactId>XmlProcessor</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

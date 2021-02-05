@@ -1,8 +1,7 @@
 package app.filter;
-
 import app.model.account.Account;
 import lombok.NoArgsConstructor;
-import nl.garvelink.iban.Modulo97;
+import org.iban4j.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -40,7 +39,20 @@ public class AccountFilter implements AccountFilterRepository{
 
     @Override
     public List<Account> checkIban(List<Account> accountList) {
-        accountList.removeIf(account -> Modulo97.verifyCheckDigits(account.getIban()));
+        accountList.removeIf(account -> {
+            try {
+                Iban iban = Iban.valueOf(account.getIban());
+                IbanUtil.validate(iban.toString());
+                return false;
+                // valid
+            } catch (IbanFormatException |
+                    InvalidCheckDigitException |
+                    UnsupportedCountryException e ) {
+                // invalid
+                return true;
+            }
+
+        });
         return accountList;
     }
 }

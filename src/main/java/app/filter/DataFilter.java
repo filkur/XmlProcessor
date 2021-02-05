@@ -15,6 +15,7 @@ public class DataFilter {
         accountList = accountFilter.checkBalance(accountList);
         accountList = accountFilter.checkCurrency(accountList);
         accountList = accountFilter.checkClosingDate(accountList);
+        accountList = accountFilter.checkIban(accountList);
 
         Accounts processedAccounts = new Accounts();
         processedAccounts.setAccountsList(accountList);

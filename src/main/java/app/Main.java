@@ -1,7 +1,6 @@
 package app;
 
 import app.processor.Processor;
-
 import javax.xml.bind.JAXBException;
 import java.io.FileNotFoundException;
 

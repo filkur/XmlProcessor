@@ -54,9 +54,9 @@
         </dependency>
         <!-- Iban validator -->
         <dependency>
-            <groupId>org.iban4j</groupId>
-            <artifactId>iban4j</artifactId>
-            <version>3.2.1</version>
+            <groupId>nl.garvelink.oss</groupId>
+            <artifactId>iban</artifactId>
+            <version>1.8.0</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains</groupId>

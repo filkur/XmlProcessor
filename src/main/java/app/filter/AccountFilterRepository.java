@@ -9,11 +9,11 @@ import java.util.List;
  */
 public interface AccountFilterRepository {
 
-    boolean checkCurrency(List<Account> accountList);
+    List<Account> checkCurrency(List<Account> accountList);
 
-    boolean checkBalance(List<Account> accountList);
+    List<Account> checkBalance(List<Account> accountList);
 
-    boolean checkClosingDate(List<Account> accountList);
+    List<Account> checkClosingDate(List<Account> accountList);
 
-    boolean checkIban(List<Account> accountList);
+    List<Account> checkIban(List<Account> accountList);
 }

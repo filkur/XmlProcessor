@@ -2,15 +2,23 @@ package app.filter;
 
 import app.model.Accounts;
 import app.model.account.Account;
-import lombok.RequiredArgsConstructor;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 import java.util.List;
 
-@RequiredArgsConstructor
-public class DataFilter implements AccountFilter {
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+public class DataFilter {
     public static Accounts filter(Accounts accounts){
         List<Account> accountList = accounts.getAccountsList();
+        AccountFilter accountFilter = new AccountFilter();
 
-        return accounts;
+        accountList = accountFilter.checkBalance(accountList);
+        accountList = accountFilter.checkCurrency(accountList);
+        accountList = accountFilter.checkClosingDate(accountList);
+
+        Accounts processedAccounts = new Accounts();
+        processedAccounts.setAccountsList(accountList);
+        return processedAccounts;
     }
 
 

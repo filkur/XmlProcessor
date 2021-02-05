@@ -1,4 +1,4 @@
-package app.dataStream;
+package app.stream;
 
 import app.model.Accounts;
 import lombok.AccessLevel;
@@ -13,7 +13,8 @@ import java.io.FileReader;
 public class XmlToJava {
     public static Accounts unmarshall () throws JAXBException, FileNotFoundException {
         JAXBContext context = JAXBContext.newInstance(Accounts.class);
-        return (Accounts) context.createUnmarshaller()
-                .unmarshal(new FileReader("./input.xml"));
+            return (Accounts) context.createUnmarshaller()
+                    .unmarshal(new FileReader("./input.xml"));
+
     }
 }

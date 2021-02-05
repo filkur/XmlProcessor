@@ -1,7 +1,7 @@
 package app.processor;
 
-import app.dataStream.JavaToXml;
-import app.dataStream.XmlToJava;
+import app.stream.JavaToXml;
+import app.stream.XmlToJava;
 import app.model.Accounts;
 import app.filter.DataFilter;
 import lombok.AccessLevel;
